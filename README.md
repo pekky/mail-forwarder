@@ -35,7 +35,7 @@ This repository contains the OpenClawd skill and helper scripts that forward Gma
 - Use Markdown for Telegram messages (MarkdownV2)
 ## Agent Onboarding
 - Read `AGENTS.md`
-- Then read `engineering-playbook/conventions/` for team-wide standards
+- Then read `engineering-playbook (separate repo)` for team-wide standards
 
 ## Team Conventions (Summary)
 - Clarity over cleverness; small functions; validate inputs
