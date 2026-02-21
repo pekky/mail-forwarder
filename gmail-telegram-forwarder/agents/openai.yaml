@@ -1,0 +1,5 @@
+version: 1
+interface:
+  display_name: Gmail to Telegram Forwarder
+  short_description: Forward Gmail to Telegram with filters and quiet hours.
+  default_prompt: Configure Gmail Pub/Sub pull, filtering, caching, and Telegram forwarding.
