@@ -1,5 +1,5 @@
 <!-- File: README.md | Project memory and conventions -->
-# Mail Frowarder Project
+# Mail Forwarder Project
 
 This repository contains the OpenClawd skill and helper scripts that forward Gmail messages to Telegram on Raspberry Pi.
 
@@ -10,7 +10,7 @@ This repository contains the OpenClawd skill and helper scripts that forward Gma
 
 ## Directory Layout
 - `gmail-telegram-forwarder/` Skill source and resources
-- `mail-frowarder.code-workspace` VSCode workspace configuration
+- `mail-forwarder.code-workspace` VSCode workspace configuration
 - `pi_env_check.sh` Local environment check helper
 
 ## Runtime Conventions
@@ -23,7 +23,7 @@ This repository contains the OpenClawd skill and helper scripts that forward Gma
 - Preferred language: Chinese
 - Default timezone: Asia/Shanghai
 - Default environment: Raspberry Pi OS on Raspberry Pi 5
-- Skill root (source): /Users/laibinqiang/Documents/mail-frowarder/gmail-telegram-forwarder
+- Skill root (source): /Users/laibinqiang/Documents/mail-forwarder/gmail-telegram-forwarder
 - Skill symlink: /Users/laibinqiang/.codex/skills/gmail-telegram-forwarder
 - Telegram format: MarkdownV2
 - Quiet hours caching: configurable, default realtime 08:00-24:00, catchup 07:59

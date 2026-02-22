@@ -1,4 +1,4 @@
-# Agent Onboarding (Mail Frowarder)
+# Agent Onboarding (Mail Forwarder)
 
 Read this file first, then `README.md`.
 

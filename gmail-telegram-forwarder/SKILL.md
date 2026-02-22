@@ -2,7 +2,7 @@
 name: gmail-telegram-forwarder
 description: Build, update, or troubleshoot an Openclawd skill that forwards Gmail messages to Telegram via a Bot using Gmail API watch + Google Pub/Sub pull (no public IP). Use when configuring sender/subject/label/unread filters, quiet-hours caching with a daily catch-up push, OAuth setup, or Markdown formatting on Raspberry Pi.
 ---
-
+<!-- File: SKILL.md | Skill definition and workflow -->
 # Gmail to Telegram Forwarder (Openclawd)
 
 Follow this workflow to implement or update the Openclawd skill.
@@ -62,6 +62,7 @@ Follow this workflow to implement or update the Openclawd skill.
 - `references/pubsub_pull.md` for Pub/Sub pull + history handling.
 - `references/telegram.md` for Telegram formatting and send API.
 - `references/deploy.md` for Raspberry Pi OS detection and deployment.
+- `references/deploy_vps_ubuntu.md` for Ubuntu VPS deployment and ClawdBot skill linkage.
 - `references/systemd_service.md` for systemd service setup.
 - `references/oauth_setup.md` for Gmail OAuth initialization on Pi.
 
@@ -74,3 +75,7 @@ Follow this workflow to implement or update the Openclawd skill.
 - `scripts/cache_db.py` Cache and idempotency store (SQLite).
 - `scripts/pi_detect.sh` Detect OS, model, and runtime versions.
 - `scripts/deploy.sh` Install deps and prepare `~/.openclawd` layout.
+- `scripts/deploy_vps_ubuntu.sh` One-command Ubuntu 24.04 VPS bootstrap and skill link setup.
+- `scripts/check_deps.sh` Detect and install missing dependencies.
+- `scripts/venv_path_demo.sh` Demonstrate PATH precedence with venv.
+- `scripts/verify_file.sh` Verify a real file path and show contents.
