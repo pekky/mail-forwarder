@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Description: Install dependencies and prepare ~/.openclawd layout
 set -euo pipefail
 
 CONFIG_PATH="${1:-$HOME/.openclawd/gmail_to_tg/config.yaml}"
@@ -27,9 +28,9 @@ echo "[deploy] OS: $OS_ID ($OS_VERSION)"
 # Install system deps (best effort)
 if command -v apt-get >/dev/null 2>&1; then
   sudo apt-get update -y
-  sudo apt-get install -y python3 python3-venv python3-pip
+  sudo apt-get install -y python3 python3-venv python3-pip sqlite3 curl
 else
-  echo "[warn] apt-get not found. Install python3, python3-venv, python3-pip manually."
+  echo "[warn] apt-get not found. Install python3, python3-venv, python3-pip, sqlite3, curl manually."
 fi
 
 # Python venv
@@ -53,7 +54,9 @@ if command -v node >/dev/null 2>&1; then
     echo "[deploy] Node version OK: $NODE_VERSION"
   fi
 else
-  echo "[warn] Node not found. Install Node.js 20+ for OpenClawd."
+  echo "[deps] Installing Node.js 20.x via NodeSource..."
+  curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+  sudo apt-get install -y nodejs
 fi
 
 echo "[deploy] Done."

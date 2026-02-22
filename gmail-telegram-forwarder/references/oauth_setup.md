@@ -1,3 +1,4 @@
+<!-- File: oauth_setup.md | Documentation -->
 # Gmail OAuth Initialization (Raspberry Pi OS)
 
 This is a one-time setup to create `token.json`.

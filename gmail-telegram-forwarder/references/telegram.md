@@ -1,3 +1,4 @@
+<!-- File: telegram.md | Documentation -->
 # Telegram Bot Sending
 
 Use the Bot API `sendMessage` method. Example request:

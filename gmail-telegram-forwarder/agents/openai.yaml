@@ -1,3 +1,4 @@
+# Description: Codex UI metadata for this skill
 version: 1
 interface:
   display_name: Gmail to Telegram Forwarder

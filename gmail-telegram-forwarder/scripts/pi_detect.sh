@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Description: Detect OS, model, and runtime versions on Raspberry Pi
 set -euo pipefail
 
 echo "[detect] os"

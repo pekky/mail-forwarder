@@ -1,0 +1,16 @@
+[Unit]
+Description=Reverse SSH tunnel from Raspberry Pi to VPS
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/default/rpi-reverse-tunnel
+ExecStart=/bin/bash /opt/rpi-reverse-tunnel/scripts/start_tunnel.sh
+ExecStartPost=/bin/bash /opt/rpi-reverse-tunnel/scripts/tunnel_health.sh up
+ExecStopPost=/bin/bash /opt/rpi-reverse-tunnel/scripts/tunnel_health.sh down
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

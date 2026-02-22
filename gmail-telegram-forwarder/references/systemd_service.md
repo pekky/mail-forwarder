@@ -1,3 +1,4 @@
+<!-- File: systemd_service.md | Documentation -->
 # systemd Service (Raspberry Pi OS)
 
 Use this unit to run the Pub/Sub pull loop as a background service.
@@ -19,7 +20,7 @@ Type=simple
 WorkingDirectory=%h/.openclawd
 Environment=PYTHONUNBUFFERED=1
 ExecStart=%h/.openclawd/venv/bin/python \
-  /Users/laibinqiang/.codex/skills/gmail-telegram-forwarder/scripts/pubsub_pull.py \
+  /Users/laibinqiang/Documents/New project/gmail-telegram-forwarder/scripts/pubsub_pull.py \
   --config %h/.openclawd/gmail_to_tg/config.yaml
 Restart=always
 RestartSec=5

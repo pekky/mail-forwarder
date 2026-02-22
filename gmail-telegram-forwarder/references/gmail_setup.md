@@ -1,3 +1,4 @@
+<!-- File: gmail_setup.md | Documentation -->
 # Gmail OAuth and Watch Setup
 
 1. Create a Google Cloud project and enable the Gmail API.

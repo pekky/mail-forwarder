@@ -1,3 +1,4 @@
+<!-- File: config.md | Documentation -->
 # Configuration Schema
 
 Use YAML (preferred) or JSON with the following fields. All times are local to `timezone`.

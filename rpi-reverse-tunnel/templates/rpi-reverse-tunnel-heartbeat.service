@@ -1,0 +1,7 @@
+[Unit]
+Description=Send reverse tunnel heartbeat
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/default/rpi-reverse-tunnel
+ExecStart=/bin/bash /opt/rpi-reverse-tunnel/scripts/tunnel_health.sh beat

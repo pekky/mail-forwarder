@@ -1,3 +1,4 @@
+<!-- File: deploy.md | Documentation -->
 # Deployment (Raspberry Pi OS)
 
 This skill includes two helper scripts:

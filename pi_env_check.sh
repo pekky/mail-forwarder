@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Description: One-off local environment check helper
 set -euo pipefail
 
 echo "== OS =="

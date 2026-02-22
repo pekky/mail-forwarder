@@ -1,0 +1,10 @@
+[Unit]
+Description=Heartbeat timer for reverse tunnel
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=30min
+Unit=rpi-reverse-tunnel-heartbeat.service
+
+[Install]
+WantedBy=timers.target
